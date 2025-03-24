@@ -10,3 +10,4 @@ beautifulsoup4
 opencv-python
 pyzbar
 fpdf
+cv2
