@@ -7,6 +7,7 @@ matplotlib
 wordcloud
 requests
 beautifulsoup4
-opencv-python-headless  # Use this instead of opencv-python
+opencv-python-headless  # Use headless version
 pyzbar
-fpdf
+pillow  # Required for image processing
+pyzbar[scripts]  # Extra utilities for barcode scanning
