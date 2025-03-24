@@ -14,7 +14,7 @@ import numpy as np
 import tempfile
 
 # -------------------- PAGE SETUP -------------------- #
-st.set_page_config(page_title="Secure Harm Detection", layout="wide")
+st.set_page_config(page_title="AI-Powered-Harm-Detection-System", layout="wide")
 
 # -------------------- USERS & THEME -------------------- #
 users = {
@@ -26,9 +26,6 @@ users = {
 
 if "theme" not in st.session_state:
     st.session_state.theme = "Light"
-
-theme = st.sidebar.selectbox("🌓 Theme", ["Light", "Dark"], index=0 if st.session_state.theme == "Light" else 1)
-st.session_state.theme = theme
 
 # -------------------- LOGIN -------------------- #
 if "username" not in st.session_state:
