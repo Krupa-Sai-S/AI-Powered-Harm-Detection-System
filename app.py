@@ -86,7 +86,7 @@ if "username" in st.session_state:
 
     # -------------------- DETECTOR -------------------- #
     if st.session_state.view == "Detector":
-        st.title("🧠 Harm Detection System")
+        st.title("🧠 AI Powered Harm Detection System")
         example = st.selectbox("Try an example:", ["", "You are horrible", "Thanks for your help!", "I hate this."])
         text_input = st.text_area("Enter text to classify", value=example)
 
