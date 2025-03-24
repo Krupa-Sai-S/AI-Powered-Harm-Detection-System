@@ -50,7 +50,7 @@ if "username" not in st.session_state:
 # -------------------- LOGGED-IN VIEWS -------------------- #
 if "username" in st.session_state:
     st.sidebar.title(f"👤 {st.session_state.username}")
-    view = st.sidebar.radio("Navigation", ["Detector", "URL Check", "QR Code Scanner", "Analytics", "Report", "About"], index=0)
+    view = st.sidebar.radio("Navigation", ["Detector", "URL Check", "Analytics", "Report", "About"], index=0)
     st.session_state.view = view
 
     st.sidebar.markdown("---")
