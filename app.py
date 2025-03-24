@@ -11,7 +11,6 @@ import requests
 from bs4 import BeautifulSoup
 import cv2
 import numpy as np
-from pyzbar.pyzbar import decode
 import tempfile
 
 # -------------------- PAGE SETUP -------------------- #
