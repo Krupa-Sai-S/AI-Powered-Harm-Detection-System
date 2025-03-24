@@ -190,12 +190,9 @@ if "username" in st.session_state:
 
         🔒 Features:
         - Secure Login
-        - Text & URL Analysis
+        - TextAnalysis
+        - URL Analysis
         - User-specific History
-        - QR Code Scanner
         - PDF Report Generator
-        - Theme Toggle (Light/Dark)
         - Streamlit Interface
-
-        
         """)
