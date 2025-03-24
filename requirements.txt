@@ -1,12 +1,12 @@
 streamlit
 pandas
 numpy
-scikit-learn  # Required for ML model loading
-xgboost  # If using XGBoost
+scikit-learn
+xgboost
 matplotlib
 wordcloud
 requests
 beautifulsoup4
-opencv-python  # Correct package name for OpenCV
+opencv-python-headless  # Use this instead of opencv-python
 pyzbar
 fpdf
