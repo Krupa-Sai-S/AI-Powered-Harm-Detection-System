@@ -143,37 +143,6 @@ if "username" in st.session_state:
             else:
                 st.warning("Please enter a valid URL.")
 
-    # -------------------- QR CODE SCANNER -------------------- #
-    elif st.session_state.view == "QR Code Scanner":
-        st.title("📷 QR Code Scanner")
-
-        uploaded_file = st.file_uploader("Upload a QR Code image", type=["png", "jpg", "jpeg"])
-
-        def scan_qr_code(image):
-            try:
-                img = cv2.imdecode(np.frombuffer(image.read(), np.uint8), cv2.IMREAD_COLOR)
-                decoded_objects = decode(img)
-                if decoded_objects:
-                    for obj in decoded_objects:
-                        return obj.data.decode("utf-8")
-                else:
-                    return None
-            except Exception as e:
-                return None
-
-        if uploaded_file:
-            url = scan_qr_code(uploaded_file)
-            
-            if url:
-                st.success(f"✅ QR Code Extracted URL: {url}")
-
-                if st.button("Analyze QR URL"):
-                    with st.spinner("Checking URL..."):
-                        result = classify(url)
-                        st.success(f"Prediction: **{result}**")
-            else:
-                st.error("❌ No QR Code detected in the image.")
-
     # -------------------- ANALYTICS -------------------- #
     elif st.session_state.view == "Analytics":
         st.title("📊 Prediction Analytics")
