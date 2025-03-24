@@ -190,7 +190,7 @@ if "username" in st.session_state:
 
         🔒 Features:
         - Secure Login
-        - TextAnalysis
+        - Text Analysis
         - URL Analysis
         - User-specific History
         - PDF Report Generator
