@@ -11,3 +11,4 @@ opencv-python-headless  # Use headless version
 pyzbar
 pillow  # Required for image processing
 pyzbar[scripts]  # Extra utilities for barcode scanning
+fpdf
